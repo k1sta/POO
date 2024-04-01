@@ -14,6 +14,8 @@ class ex1{
 		double area = pi * (extRadius * extRadius - intRadius * intRadius);
 		
 		System.out.println("The result is: " + area);
+		
+		myObj.close();
 	}
 }
 
@@ -28,6 +30,8 @@ class ex2{
 		String height = myObj.nextLine();
 
 		System.out.println("\n" + "Name: " + name + "\n" + "Age: " + age + "\n" + "Height: " + height);
+		
+		myObj.close();
 	}
 }
 
@@ -46,19 +50,23 @@ class ex3{
 		} else{
 			System.out.println("FAILED! TRY AGAIN YOU DUMB STUPID F");
 		}
+		
+		myObj.close();
 	}
 }
 
 
 class ex4{
 	public static void main (String[] args){
-	Scanner myObj = new Scanner(System.in);
-	System.out.println("Insert your number to calculate the fatorial: ");
-	int n = myObj.nextInt();
-	
-	int result = fatorial(n);
+		Scanner myObj = new Scanner(System.in);
+		System.out.println("Insert your number to calculate the fatorial: ");
+		int n = myObj.nextInt();
+		
+		int result = fatorial(n);
 
-	System.out.println("The result is: " + result);
+		System.out.println("The result is: " + result);
+		
+		myObj.close();
 	}
 
 	public static int fatorial (int n){
