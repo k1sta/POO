@@ -1,0 +1,11 @@
+1. Explique as principais diferenças entre programação estruturada/modular e programação orientada a objetos.
+
+The main differences between modular programming and OOP is the encapsulation of "objects" in the second one. In OOP, we have "objects" that contains their own methods (functions) and ways of treating itself. In other words, there's no need of a function that abstracts all the context of the data, because when we use the objects methods, we preserve most of the context-sensitive things.
+
+2.Diferencie uma classe de um objeto.
+
+A class acts like a mold and an object is the product of that mold.
+
+3. Defina atributo de objeto, atributo de classe, método de objeto e método de classe
+
+The atrubute of a class is sustained in every object of the class itself, acting like a global variable to that univers (objects of that class). The atribute of an object is contained on that instance only, being acessible only by methods that allow that.
