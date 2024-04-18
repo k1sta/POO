@@ -1,0 +1,14 @@
+Criaremos um método de objeto .equals que aceitará um objeto Funcionario e comparará a matrícula do input com a matrícula do objeto atual.
+
+Para isso, teremos que dar @Override para substituir a função equals existente em Object. 
+
+Portanto, teremos algo do tipo
+
+@Override
+public boolean equals(Object f1){
+	if(f1 instanceof Funcionario && this.matricula == ((Funcionario) f1).matricula){
+		return true;
+	}
+	
+	return true;
+}

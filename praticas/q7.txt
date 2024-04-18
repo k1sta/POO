@@ -1,0 +1,1 @@
+Na chamada de função bonus no arquivo do Gerente, deve-se incluir "super." para referir-se a função na super classe.
