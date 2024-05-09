@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class FactoryCarta{
-    public static novaCarta(){
+    public static Carta novaCarta(){
         Carta carta = new Carta();
         carta.naipe = new Naipe();
 
