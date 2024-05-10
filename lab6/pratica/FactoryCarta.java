@@ -1,15 +1,15 @@
 import java.util.Random;
 
 public class FactoryCarta{
-    public static novaCarta(){
+    public static Carta novaCarta(){
+	Random r = new Random();
         Carta carta = new Carta();
-        carta.naipe = new Naipe();
 
         int lengthEnumCartas = eNumero.values().length;
         int lengthEnumNaipes = eNaipe.values().length;
 
-        carta.numero = eNumero.values()[Random.nextInt(lengthEnumCartas)];
-        carta.naipe.naipe = eNaipe.values()[Random.nextInt(lengthEnumNaipes)];
+        carta.setNumero(eNumero.values()[r.nextInt(lengthEnumCartas)]);
+        carta.setNaipe(eNaipe.values()[r.nextInt(lengthEnumNaipes)]);
 
         return carta;
     }
